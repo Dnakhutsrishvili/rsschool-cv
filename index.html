@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <img src="" alt="David Nakhutsrishvili photo" />
+      <img src="dato.jpg" alt="David Nakhutsrishvili photo" />
       <h1>David Nakhutsrishvili</h1>
       <p>Frontend Developer</p>
       <nav>
@@ -27,33 +27,139 @@
     <main>
       <section id="about">
         <h2>About Me</h2>
+        <p>
+          I am a motivated Frontend Developer with hands-on experience building
+          modern web applications. I am passionate about creating clean,
+          responsive, and user-friendly interfaces. My strength lies in
+          problem-solving and quickly adapting to new technologies. Having
+          worked at Andersen Lab, I gained practical experience in a
+          professional development environment. I am now focused on deepening my
+          expertise in frontend technologies and growing as a developer through
+          RS School and continuous self-learning.
+        </p>
       </section>
 
       <section id="contacts">
         <h2>Contacts</h2>
-        <ul></ul>
+        <ul>
+          <li>
+            Email:
+            <a href="mailto:dtnakhutsrishvili@gmail.com"
+              >dtnakhutsrishvili@gmail.com</a
+            >
+          </li>
+          <li>
+            GitHub:
+            <a href="https://github.com/Dnakhutsrishvili">Dnakhutsrishvili</a>
+          </li>
+          <li>
+            LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/davit-nakhutsrishvili-994050238/"
+              >Davit Nakhutsrishvili</a
+            >
+          </li>
+          <li>Discord: davit03755</li>
+        </ul>
       </section>
 
       <section id="skills">
         <h2>Skills</h2>
-        <ul></ul>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Git &amp; GitHub</li>
+          <li>Responsive Design</li>
+          <li>REST API</li>
+        </ul>
       </section>
 
       <section id="code">
         <h2>Code Example</h2>
+        <p>Street Fighter Selection — Codewars kata solved in TypeScript:</p>
+        <pre><code>type Move = 'down' | 'up' | 'right' | 'left'
+
+export function streetFighterSelection(
+  fighters: string[][],
+  position: number[],
+  moves: Move[]
+) {
+  interface User {
+    horIndex: number;
+    verIndex: number;
+  }
+
+  const indexes: User = {
+    horIndex: position[1],
+    verIndex: position[0]
+  }
+
+  let hovered: string[] = [];
+
+  moves.forEach((move) =&gt; {
+    if (move === 'left') {
+      indexes.horIndex--;
+      if (indexes.horIndex &lt; 0) indexes.horIndex = 5;
+    }
+    if (move === 'right') {
+      indexes.horIndex++;
+      if (indexes.horIndex &gt; 5) indexes.horIndex = 0;
+    }
+    if (move === 'up') {
+      indexes.verIndex = 0;
+    }
+    if (move === 'down') {
+      indexes.verIndex = 1;
+    }
+    hovered.push(fighters[indexes.verIndex][indexes.horIndex]);
+  })
+
+  return hovered;
+}</code></pre>
       </section>
 
       <section id="projects">
         <h2>Projects</h2>
-        <ul></ul>
+        <ul>
+          <li>
+            <a href="https://flowblock-website.vercel.app">FlowBlock Website</a>
+            — A web application built with modern frontend technologies.
+          </li>
+          <li>
+            <a href="https://invitio-client.vercel.app">Invitio Client</a>
+            — A client-side application with interactive UI.
+          </li>
+          <li>
+            <a href="https://cat-meme.vercel.app">Cat Meme</a>
+            — A fun project showcasing creative frontend skills.
+          </li>
+        </ul>
       </section>
 
       <section id="education">
         <h2>Education</h2>
+        <ul>
+          <li>Andersen Lab — Frontend Development</li>
+          <li>RS School — Frontend Course</li>
+          <li>
+            Self-taught — Continuous learning through online resources,
+            documentation, and practice
+          </li>
+        </ul>
       </section>
 
       <section id="english">
         <h2>English</h2>
+        <p>
+          B2 (Upper-Intermediate). I am comfortable reading technical
+          documentation, communicating with international teams, and writing
+          professional correspondence in English. I practice regularly through
+          consuming English-language content and participating in developer
+          communities.
+        </p>
       </section>
     </main>
 
