@@ -230,6 +230,22 @@ code {
   border-radius: 50%;
 }
 
+#languages ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#languages ul li {
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+#languages ul li strong {
+  color: #38bdf8;
+}
+
 footer {
   border-top: 1px solid #1e293b;
   padding-top: 30px;
@@ -237,9 +253,12 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
   color: #64748b;
   font-size: 0.85rem;
+  text-align: center;
+  width: 100%;
 }
 
 footer a {
