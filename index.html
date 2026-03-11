@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Nakhutsrishvili - CV</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="top">
+    <header>
+      <img src="dato.jpg" alt="David Nakhutsrishvili photo" />
+      <h1>David Nakhutsrishvili</h1>
+      <p>Frontend Developer</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#code">Code Example</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#languages">Languages</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am a motivated Frontend Developer with hands-on experience building
+          modern web applications. I am passionate about creating clean,
+          responsive, and user-friendly interfaces. My strength lies in
+          problem-solving and quickly adapting to new technologies. Having
+          worked at Andersen Lab, I gained practical experience in a
+          professional development environment. I am now focused on deepening my
+          expertise in frontend technologies and growing as a developer through
+          RS School and continuous self-learning.
+        </p>
+      </section>
+
+      <section id="contacts">
+        <h2>Contacts</h2>
+        <ul>
+          <li>
+            Email:
+            <a href="mailto:dtnakhutsrishvili@gmail.com"
+              >dtnakhutsrishvili@gmail.com</a
+            >
+          </li>
+          <li>
+            GitHub:
+            <a href="https://github.com/Dnakhutsrishvili">Dnakhutsrishvili</a>
+          </li>
+          <li>
+            LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/davit-nakhutsrishvili-994050238/"
+              >Davit Nakhutsrishvili</a
+            >
+          </li>
+          <li>Discord: davit03755</li>
+          <li>
+            Codewars: <a href="https://www.codewars.com/users/pcetp">pcetp</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Git &amp; GitHub</li>
+          <li>Responsive Design</li>
+          <li>REST API</li>
+        </ul>
+      </section>
+
+      <section id="code">
+        <h2>Code Example</h2>
+        <p>Street Fighter Selection — Codewars kata solved in TypeScript:</p>
+        <pre><code>type Move = 'down' | 'up' | 'right' | 'left'
+
+export function streetFighterSelection(
+  fighters: string[][],
+  position: number[],
+  moves: Move[]
+) {
+  interface User {
+    horIndex: number;
+    verIndex: number;
+  }
+
+  const indexes: User = {
+    horIndex: position[1],
+    verIndex: position[0]
+  }
+
+  let hovered: string[] = [];
+
+  moves.forEach((move) =&gt; {
+    if (move === 'left') {
+      indexes.horIndex--;
+      if (indexes.horIndex &lt; 0) indexes.horIndex = 5;
+    }
+    if (move === 'right') {
+      indexes.horIndex++;
+      if (indexes.horIndex &gt; 5) indexes.horIndex = 0;
+    }
+    if (move === 'up') {
+      indexes.verIndex = 0;
+    }
+    if (move === 'down') {
+      indexes.verIndex = 1;
+    }
+    hovered.push(fighters[indexes.verIndex][indexes.horIndex]);
+  })
+
+  return hovered;
+}</code></pre>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <a href="https://flowblock-website.vercel.app">FlowBlock Website</a>
+            — A web application built with modern frontend technologies.
+          </li>
+          <li>
+            <a href="https://invitio-client.vercel.app">Invitio Client</a>
+            — A client-side application with interactive UI.
+          </li>
+          <li>
+            <a
+              href="https://cat-meme-6upaaqlls-dnakhutsrishvilis-projects.vercel.app"
+              >Cat Meme</a
+            >
+            — A fun project showcasing creative frontend skills.
+          </li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li>Andersen Lab — Frontend Development</li>
+          <li>RS School — Frontend Course</li>
+          <li>
+            Self-taught — Continuous learning through online resources,
+            documentation, and practice
+          </li>
+        </ul>
+      </section>
+
+      <section id="languages">
+        <h2>Languages</h2>
+        <ul>
+          <li>
+            <strong>English — B2 (Upper-Intermediate).</strong> I am comfortable
+            reading technical documentation, communicating with international
+            teams, and writing professional correspondence in English. I practice
+            regularly through consuming English-language content and participating
+            in developer communities.
+          </li>
+          <li>
+            <strong>Russian — B1 (Intermediate).</strong> I can handle everyday
+            conversations and understand general written content. Sufficient for
+            basic professional communication and reading technical articles.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <a href="https://github.com/Dnakhutsrishvili">GitHub</a>
+      <p>&copy; 2026</p>
+      <a href="https://rs.school/courses/short-track">
+        <img src="https://rs.school/_next/static/media/rss-logo.c19ce1b4.svg" alt="RS School logo" />
+      </a>
+    </footer>
+
+    <a href="#top" class="scroll-top" aria-label="Scroll to top">&uarr;</a>
+  </body>
+</html>
